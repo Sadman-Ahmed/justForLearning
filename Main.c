@@ -1,16 +1,17 @@
 #include <stdio.h>
 
 int add(int num1, int num2);
+int sub(int a, int b);
 
 int main(){
     int num1 = 10;
     int num2 = 20;
 
-    int result = add(num1, num2);
-    int result1 = minus(num1,num2);
+    int addRes = add(num1, num2);
+    int subRes = sub(num2,num1);
 
-    printf("The sum of the number is: %d", result);
-    printf("The substraction of the number is: %d",result1);
+    printf("The sum of the number is: %d\n",addRes);
+    printf("The substraction of the number is: %d",subRes);
 
     return 0;
 
@@ -19,6 +20,6 @@ int main(){
 int add(int a, int b){
     return a+b;
 }
-int minus(int a, int b){
+int sub(int a, int b){
     return a - b;
 }
