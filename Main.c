@@ -15,7 +15,7 @@ int main(){
     printf("enter the smaller number than the previous number: ");
     scanf("%d", &num2);
 
-    int addRes = add(num1, num2);
+
     int subRes = sub(num1,num2);
     int mulRes = mul(num1, num2);
     int divRes = div(num1, num2);
@@ -29,9 +29,6 @@ int main(){
 
 }
 
-int add(int a, int b){
-    return a+b;
-}
 
 int sub(int a, int b){
     return a-b;
